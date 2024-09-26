@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+       
+       
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 2px 5px 4px 2px rgb(143, 142, 142);
+    }
+    h1{
+      text-align: center;
+      font-size: 60px;
+      padding: 20px;
+
+    }
+    h2{
+        margin: 20px;
+        text-align: center;
+        font-size: 40px;
+        border-radius: 20px;
+
+    }
+    .box{
+        border: 1px solid black;
+        background-color: rgb(170, 231, 255);
+        border-radius: 10px;
+        width: 90%;
+        height: 50%;
+        margin: 45px;
+    }
+    label{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    button{
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .data{
+        border: 1px solid black;
+        width: 90%;
+        height: 50%;
+        margin: 50px;
+        border-radius: 20px;
+    }
+    .EmployeeDetails{
+        border: 1px solid black;
+        width: 90%;
+        height: 50%;
+        margin: 50px;
+        border-radius: 20px;
+    }
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+thead {
+    background-color: #4b68ed;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+td img {
+    display: block;
+    margin: 0 auto;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+th, td {
+    text-align: center; 
+}
+
+img{
+    border: 1PX solid black;
+    border-radius: 50px;
+}
+h2 {
+        margin-bottom: 20px; 
+    }
+
+    .map-container {
+        margin: 20px auto; 
+        padding: 10px; 
+        width:90%; 
+        border-radius: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Company Directory Portal</h1>
+        
+        <form class="box">
+            <h2> Employee Registration Form</h2>
+           <label>Full Name:</label>
+           <br>
+            <input type=" text" name="name" placeholder="" id="name"  style="width: 90%; height: 20px; padding: 10px; margin: 20px;" required/>
+            <br>
+            <label>Email:</label>
+           <br>
+            <input type="email" name="email" placeholder="" id="email" style="width: 90%; height: 20px; padding: 10px; margin: 20px;" required/>
+            
+            <br>
+            <label for="dropdown">Department:</label>
+<br>
+<select name="department" id="dropdown" style="width: 91%; height: 50px; padding: 10px; margin: 20px;" required>
+    <option value=""></option>
+    <option value="hr">HR</option>
+    <option value="it">IT</option>
+    <option value="finance">Finance</option>
+    <option value="marketing">Marketing</option>
+   </select>
+ <br>
+ <label for="name">Employee ID:</label>
+ <br>
+ <input type="text" name="employee_id" placeholder="Enter Employee ID" id="name" style="width: 90%; height: 20px; padding: 10px; margin: 20px;" required />
+ <br>
+ <label>Profile Picture URL:</label>
+           <br>
+            <input type="url" name="url" placeholder="" id="url" style="width: 90%; height: 20px; padding: 10px; margin: 20px;" required/>
+            
+            <br>
+            <button style="width: 90%; height: 60px; padding: 10px; margin: 20px;">Register Employee</button>
+ </form>
+ <div class="data">
+    <h2>Employee Data</h2>
+    <ol type="1">
+        <li style="margin: 20px; padding: 10px; font-size: 25px; font-weight: bold; color: rgb(56, 126, 191);">John Doe -<a href="mailto:john@example.com" style="color: rgb(33, 11, 200); font-size: 25px; font-weight: bold;">john@example.com</a></li>
+        <hr>
+        <li style="margin: 20px; padding: 10px; font-size: 25px; font-weight: bold; color: rgb(56, 126, 191);">Jane Smith-<a href="mailto:jane@example.com" style="color: rgb(33, 11, 200); font-size: 25px; font-weight: bold;">jane@example.com</a></li>
+        <hr>
+    </ol>
+</div>
+  <div class="EmployeeDetails">
+    <h2>Employee Details</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Department</th>
+                <th>Profile Picture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>12345</td>
+                <td>IT</td>
+                <td><img src="https://www.textileinfomedia.com/img/dpri/formal-wear-shirt-for-gents-full.jpg"  width="50"></td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>67890</td>
+                <td>HR</td>
+                <td><img src="https://4.imimg.com/data4/XE/NI/MY-16694305/casual-gents-shirt-500x500.jpg" width="50"></td>
+            </tr>
+        </tbody>
+    </table>
+     </div>
+     <h2>Company Location</h2>
+     <div class="map-container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121766.35543884171!2d78.23755419726561!3d17.49803020000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727339872880!5m2!1sen!2sin"
+         width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+</div>
+
+</body>
+</html>
